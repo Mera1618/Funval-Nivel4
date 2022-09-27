@@ -33,24 +33,28 @@
             </ul>
         </div>
     </div>
-    <div class="formulario-contacto-interno">
-        <h1 class="titulos">Formulario</h1>
-        <form action=“mensaje.php” method=“post”>
-            <!-- <div class="mb-3"> -->
-              <label for="exampleName" class="form-label">Name</label>
-              <input type="name" name='nombre' class="form-control" id="full-name" placeholder="Full Name">
-            <!-- </div> -->
-            <!-- <div class="mb-3"> -->
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" name='corre' class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
-            </div>
-            <!-- <div class="mb-3"> -->
-              <label for="exampleNumber" class="form-label">Number</label>
-              <input type="number" name='numero' class="form-control" id="examplenumber" placeholder="Phone number">
-            <!-- </div> -->
-            <button type="submit" class="btn btn-success d-grid gap-2 mx-auto w-100"><a class="boton-inicial" href="mensaje.php">Enviar</a></button>
-          </form>
-    </div>
+    <section class="main">
+                    <section class="loggeo d-flex flex-row-reverse justify-content-start align-items-center m-5">
+                    <form class="p-3 pt-5 " action="./mensaje.php" method="post">
+                        <h1 class="title3 mb-4">Dejanos un Mensaje</h1>
+              <!--<div class="mb-4" action="./registro.php" method="post">-->
+                <label for="exampleInputEmail1" class=" mb-2 form-label label3">Nombre</label>
+                <input  name="nombre" type="text" class="form-control field"  aria-describedby="emailHelp" placeholder="Enter your name">
+                <label for="exampleInputEmail1" class=" mb-2 form-label label3">Email</label>
+                <input  name="email" type="email" class="form-control field" aria-describedby="emailHelp" placeholder="Enter Email">
+                <label for="exampleInputEmail1" class=" mb-2 form-label label3">Numero de telefono</label>
+                <input  name="telefono" type="number" class="form-control field" aria-describedby="emailHelp" placeholder="Enter your phone number">
+                <!--</div>-->
+                <!--<div class="mb-5" action="./registro.php" method="post">-->
+                  <label for="exampleInputPassword1" class="form-label label3">Mensaje</label>
+                  <textarea name="mensaje" type="text" class=" mb-4 form-control field parrafo" placeholder="Enter your message"></textarea>
+                <!--</div> -->
+                <button type="submit" name="enviar" class="enviar btn btn-success">Enviar</button>
+              </form>
+                      </section>
+                  </section>
+  
+
 <?php
     include("pie-de-pagina.php");
 ?>

@@ -1,7 +1,10 @@
 <?php
-    $nombres = $_POST['nombre'];
-    $correos = $_POST['corre'];
-    $celular = $_POST['numero'];
+    //  if(isset($_POST["enviar"])){
+        $nombres = $_POST['nombre'];
+        $correos = $_POST['email'];
+        $celular = $_POST['telefono'];
+        $mensajes = $_POST['mensaje'];
+    //  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,10 +23,11 @@
     <div class="mensaje-consumidor">
         <p>
             Estimado<br>
-            Nombre: Señor o Señorita <?php echo "$nombres" ?><br>
-            Correo: <?php echo "$correos" ?> @gmail.com <br>
-            Telefono: <?php echo "$celular" ?> 555555555 <br>
-            Mensaje: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum minima aliquam pariatur, 
+            Nombre: Señor o Señorita <?php echo $nombres; ?><br>
+            Correo: <?php echo $correos; ?><br>
+            Telefono: <?php echo $celular; ?><br>
+            Mensaje: <?php echo $mensajes;?><br>
+            Gracias por comunicarte conmigo, amet consectetur adipisicing elit. Laborum minima aliquam pariatur, 
             quas natus eligendi, iure impedit harum tenetur provident alias consectetur architecto totam aperiam, 
             necessitatibus ipsa voluptate molestias suscipit. Minima accusantium maxime placeat velit reprehenderit 
             accusamus deleniti ad quis soluta, voluptatem rerum, minus, amet vel porro. Unde, aliquid perferendis?
