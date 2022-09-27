@@ -1,0 +1,49 @@
+#encabezado {
+	background-color:#65c6d7;
+}
+#pie {
+	background-color: #65c6d7;
+}
+
+.contenedor-principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.boton-inicial{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.bibliografia{
+    padding: 25px;
+}
+
+.formulario-central{
+    padding: 0%;
+    width: 250px;
+    height: 350px;
+    display: flex;
+}
+
+.titulos{
+    text-align: center;
+}
+
+.formulario-contacto{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario-contacto-interno{
+    text-align: center;
+    width: auto;
+    display: grid;
+    padding: 50px;
+}
+
+.mensaje-consumidor{
+    padding: 25px;
+    text-align: justify;
+}
