@@ -1,10 +1,8 @@
 <?php
-    //  if(isset($_POST["enviar"])){
         $nombres = $_POST['nombre'];
         $correos = $_POST['email'];
         $celular = $_POST['telefono'];
         $mensajes = $_POST['mensaje'];
-    //  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
